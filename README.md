@@ -4,12 +4,12 @@ Alfred 2 Hipchat Emoticons Workflow
 Install
 -------
 
-Download the [Hipchat Emoticons.workflow](https://github.com/aortbals/alfred2-hipchat-emoticons-workflow/Hipchat Emoticons.alfredworkflow) and add it to your Alfred 2 workflows.
+Download the [Hipchat Emoticons.workflow](https://github.com/aortbals/alfred2-hipchat-emoticons-workflow/raw/master/Hipchat%20Emoticons.alfredworkflow) and add it to your Alfred 2 workflows.
 
 Usage
 -----
 
-![Hipchat Usage](https://github.com/aortbals/alfred2-hipchat-emoticons-workflow/screenshots/usage.png)
+![Hipchat Usage](https://raw.github.com/aortbals/alfred2-hipchat-emoticons-workflow/master/screenshots/usage.png)
 
 The default keyword is **`hip`** + a search query. Enter will copy the shortcut to your clipboard and paste into the front most app.
 
