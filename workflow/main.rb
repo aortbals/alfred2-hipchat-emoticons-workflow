@@ -1,45 +1,27 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
+$LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
+
 require 'rubygems' unless defined? Gem # rubygems is only needed in 1.8
 require "bundle/bundler/setup"
 require "alfred"
+require "lib/hipchat_emoticons"
+require "lib/emoticon"
 
+def generate_feedback(alfred, query)
+  feedback  = alfred.feedback
+  queries   = query.split
+  emoticons = HipchatEmoticons.emoticons
 
+  HipchatEmoticons.select!(emoticons, queries)
+  emoticons.each { |emoticon| feedback.add_item(HipchatEmoticons.item_hash(emoticon)) }
 
-
-Alfred.with_friendly_error do |alfred|
-  fb = alfred.feedback
-
-  # add a file feedback
-  fb.add_file_item(File.expand_path "~/Applications/")
-
-  # add an arbitrary feedback
-  fb.add_item({
-    :uid      => ""                     ,
-    :title    => "Just a Test"          ,
-    :subtitle => "feedback item"        ,
-    :arg      => "A test feedback Item" ,
-    :valid    => "yes"                  ,
-  })
-  
-  # add an feedback to test rescue feedback
-  fb.add_item({
-    :uid          => ""                     ,
-    :title        => "Rescue Feedback Test" ,
-    :subtitle     => "rescue feedback item" ,
-    :arg          => ""                     ,
-    :autocomplete => "failed"               ,
-    :valid        => "no"                   ,
-  })
-
-  if ARGV[0].eql? "failed"
-    alfred.with_rescue_feedback = true
-    raise Alfred::NoBundleIDError, "Wrong Bundle ID Test!"
-  end
-
-  puts fb.to_xml(ARGV)
+  puts feedback.to_alfred
 end
 
-
-
+Alfred.with_friendly_error do |alfred|
+  alfred.with_rescue_feedback = true
+  query = ARGV.join(' ').strip
+  generate_feedback(alfred, query)
+end

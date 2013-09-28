@@ -1,0 +1,15 @@
+require 'rubygems' unless defined? Gem # rubygems is only needed in 1.8
+
+VENDOR_DIR          = File.expand_path("../vendor", __FILE__)
+EMOTICONS_JSON_URL  = "https://raw.github.com/henrik/hipchat-emoticons/master/emoticons.json"
+EMOTICONS_FILE      = "#{VENDOR_DIR}/emoticons.json"
+ICONS_URL           = "http://hipchat-emoticons.nyh.name/"
+ICONS_DIR           = "#{VENDOR_DIR}/icons"
+
+desc "Update emoticons"
+task :update do
+ `curl #{EMOTICONS_JSON_URL} > #{EMOTICONS_FILE}`
+ `wget -r -l 1 -P #{ICONS_DIR} -A jpeg,jpg,bmp,gif,png -nd -H #{ICONS_URL}`
+end
+
+task :default => :update

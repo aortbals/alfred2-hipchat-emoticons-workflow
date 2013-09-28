@@ -3,40 +3,37 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>me.zhaowu.alfred2-ruby-template</string>
+	<string>com.aortbals.hipchat-emoticons</string>
 	<key>connections</key>
 	<dict>
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>42D05639-3F0F-4760-8214-317167E4173D</string>
+				<string>589F7409-999F-4CD4-9366-769CC59D4917</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
-		</array>
-		<key>BA17BE41-176A-4E9A-B958-A3F0BEA36829</key>
-		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>42D05639-3F0F-4760-8214-317167E4173D</string>
+				<string>CE44C3D5-5A08-4E26-A5F5-6677665D3DEF</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>262144</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Open hipchat emoticons in your browser</string>
 			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Zhao Cai</string>
+	<string>Aaron Ortbals</string>
 	<key>description</key>
-	<string>A starting place for developing Ruby based workflow in Alfred</string>
+	<string>Search for hipchat emoticons.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Ruby Based Workflow Template</string>
+	<string>Hipchat Emoticons</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -47,15 +44,15 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
-				<string>test feedback</string>
+				<string>hip</string>
 				<key>runningsubtext</key>
-				<string>working...</string>
+				<string>...</string>
 				<key>script</key>
 				<string>/usr/bin/ruby ./main.rb {query}</string>
 				<key>subtext</key>
-				<string>Ruby Based Workflow Template</string>
+				<string>Search hipchat emoticons</string>
 				<key>title</key>
-				<string>Test Alfred Feedback</string>
+				<string>Hipchat Emoticons</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -65,56 +62,40 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>21557827-8003-42B7-A042-16D4C9278FEC</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
+				<key>autopaste</key>
 				<true/>
-				<key>output</key>
-				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
+				<key>clipboardtext</key>
 				<string>{query}</string>
-				<key>title</key>
-				<string>Ruby Script</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>42D05639-3F0F-4760-8214-317167E4173D</string>
+			<string>589F7409-999F-4CD4-9366-769CC59D4917</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>keyword</key>
-				<string>test rescue feedback</string>
-				<key>runningsubtext</key>
-				<string>...</string>
-				<key>script</key>
-				<string>/usr/bin/ruby ./main_with_rescue_feedback.rb {query}</string>
-				<key>subtext</key>
-				<string>Ruby Based Workflow Template</string>
-				<key>title</key>
-				<string>Test Alfred Rescue Feedback</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
+				<key>plusspaces</key>
 				<false/>
+				<key>url</key>
+				<string>http://hipchat-emoticons.nyh.name/</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>BA17BE41-176A-4E9A-B958-A3F0BEA36829</string>
+			<string>CE44C3D5-5A08-4E26-A5F5-6677665D3DEF</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -124,20 +105,20 @@
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
 		<dict>
 			<key>ypos</key>
-			<real>250</real>
+			<real>140</real>
 		</dict>
-		<key>42D05639-3F0F-4760-8214-317167E4173D</key>
+		<key>589F7409-999F-4CD4-9366-769CC59D4917</key>
 		<dict>
 			<key>ypos</key>
 			<real>140</real>
 		</dict>
-		<key>BA17BE41-176A-4E9A-B958-A3F0BEA36829</key>
+		<key>CE44C3D5-5A08-4E26-A5F5-6677665D3DEF</key>
 		<dict>
 			<key>ypos</key>
-			<real>370</real>
+			<real>320</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>http://github.com/zhaocai/alfred2-ruby-template</string>
+	<string>http://github.com/aortbals/alfred2-hipchat-emoticons-workflow</string>
 </dict>
 </plist>

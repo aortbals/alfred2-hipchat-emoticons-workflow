@@ -2,8 +2,10 @@
 # path is the relative path to the workflow in the project root
 ---
 path: workflow
-domain: me.zhaowu
-id: alfred2-ruby-template
+domain: com.aortbals
+id: hipchat-emoticons
 # If you are using Alfred's advanced Dropbox sync, indicate the path shown in
 # Alfred Preferences > Advanced > Syncing:
+
 dropbox: ~/Dropbox/Alfred
+# dropbox: ~/Dropbox/Software, Settings, Configuration/Alfred
