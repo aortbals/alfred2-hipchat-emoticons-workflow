@@ -37,4 +37,4 @@ Credits
 
 - [Hipchat Emoticons on Github](https://github.com/henrik/hipchat-emoticons)
 - [Alfred 2 Workflow Ruby Template on Github](https://github.com/zhaocai/alfred2-ruby-template)
-- [Alfred 2 Font Awesome Workflow](https://github.com/ruedap/alfred2-font-awesome-workflow) as a great reference for build ruby-based workflows
+- [Alfred 2 Font Awesome Workflow](https://github.com/ruedap/alfred2-font-awesome-workflow) as a great reference for building ruby-based workflows
