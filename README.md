@@ -25,7 +25,7 @@ Clone this repo. Alfred workflows run under system ruby, so switch to system rub
     rake bundle:install
     rake install (or rake dbxinstall for dropbox support)
 
-#### Updating the Emoticons ####
+#### Downloading/Updating the Emoticons ####
 
 From the workflow directory:
 
