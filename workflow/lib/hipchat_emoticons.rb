@@ -4,6 +4,8 @@ module HipchatEmoticons
   end
 
   def self.select!(emoticons, queries)
+    queries = [queries] if !queries.respond_to? :each
+
     queries.each do |q|
       emoticons.reject! { |e| e.shortcut.index(q.downcase) ? false : true }
     end
