@@ -1,6 +1,8 @@
 Alfred 2 Hipchat Emoticons Workflow
 ===================================
 
+[![Build Status](https://travis-ci.org/aortbals/alfred2-hipchat-emoticons-workflow.png?branch=master)](https://travis-ci.org/aortbals/alfred2-hipchat-emoticons-workflow)
+
 Install
 -------
 
