@@ -312,7 +312,7 @@
     "shortcut": "(yuno)"
   },
   {
-    "image": "6/itsatrap.png",
+    "image": "itsatrap.png",
     "height": "25",
     "width": "25",
     "shortcut": "(itsatrap)"
@@ -346,18 +346,6 @@
     "height": "25",
     "width": "25",
     "shortcut": "(jobs)"
-  },
-  {
-    "image": "gtfo.png",
-    "height": "25",
-    "width": "25",
-    "shortcut": "(gtfo)"
-  },
-  {
-    "image": "gtfo.png",
-    "height": "25",
-    "width": "25",
-    "shortcut": "(huh)"
   },
   {
     "image": "taft.png",
@@ -468,7 +456,7 @@
     "shortcut": "(ohcrap)"
   },
   {
-    "image": "8071/mike.png",
+    "image": "mike.png",
     "height": "25",
     "width": "18",
     "shortcut": "(arrington)"
@@ -576,7 +564,7 @@
     "shortcut": "(goodnews)"
   },
   {
-    "image": "10678/kennypowers.png",
+    "image": "kennypowers.png",
     "height": "25",
     "width": "25",
     "shortcut": "(kennypowers)"
@@ -786,7 +774,7 @@
     "shortcut": "(drevil)"
   },
   {
-    "image": "boom.gif",
+    "image": "boom-custom.png",
     "height": "23",
     "width": "25",
     "shortcut": "(boom)"
@@ -942,12 +930,6 @@
     "shortcut": "(trump)"
   },
   {
-    "image": "timeforthat-1366733895.gif",
-    "height": "30",
-    "width": "25",
-    "shortcut": "(timeforthat)"
-  },
-  {
     "image": "grumpycat-1366734534.png",
     "height": "25",
     "width": "25",
@@ -1012,5 +994,11 @@
     "height": "26",
     "width": "33",
     "shortcut": "(badjokeeel)"
+  },
+  {
+    "image": "gtfo-1381428639.png",
+    "height": "25",
+    "width": "25",
+    "shortcut": "(gtfo)"
   }
 ]
