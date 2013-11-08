@@ -5,4 +5,5 @@ gem "alfred-workflow"
 
 group :development do
   gem "rspec"
+  gem "rake"
 end

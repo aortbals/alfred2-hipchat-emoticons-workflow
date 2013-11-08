@@ -1,4 +1,5 @@
 require 'rubygems' unless defined? Gem # rubygems is only needed in 1.8
+require 'rspec/core/rake_task'
 
 VENDOR_DIR          = File.expand_path("../vendor", __FILE__)
 EMOTICONS_JSON_URL  = "https://raw.github.com/henrik/hipchat-emoticons/master/emoticons.json"
@@ -12,4 +13,5 @@ task :update do
  `wget -r -l 1 -P #{ICONS_DIR} -A jpeg,jpg,bmp,gif,png -nd -H #{ICONS_URL}`
 end
 
-task :default => :update
+RSpec::Core::RakeTask.new(:spec)
+task :default => :spec
