@@ -1,5 +1,3 @@
-require 'json'
-
 class Emoticon
   VENDOR_DIR = File.expand_path("../../vendor", __FILE__)
 

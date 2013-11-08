@@ -4,7 +4,12 @@
 $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
 
 require 'rubygems' unless defined? Gem # rubygems is only needed in 1.8
-require "bundle/bundler/setup"
+begin
+  require "bundle/bundler/setup"
+rescue LoadError
+  puts "Couldn't load 'bundle/bundler/setup'"
+end
+require 'json'
 require "alfred"
 require "lib/hipchat_emoticons"
 require "lib/emoticon"

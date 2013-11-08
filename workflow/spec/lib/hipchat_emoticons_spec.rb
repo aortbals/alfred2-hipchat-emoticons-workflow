@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'pry'
 
 describe HipchatEmoticons do
   let(:emoticons) { HipchatEmoticons.emoticons }

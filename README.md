@@ -29,7 +29,7 @@ Clone this repo. Alfred workflows run under system ruby, so switch to system rub
 
 From the workflow directory:
 
-    rake
+    rake update
 
 
 Credits

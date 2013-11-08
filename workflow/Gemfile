@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "plist"
 gem "alfred-workflow"
+gem "json_pure"
 
 group :development do
   gem "rspec"
