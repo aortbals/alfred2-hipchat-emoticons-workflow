@@ -1,0 +1,18 @@
+# See http://www.robotstxt.org/wc/norobots.html for documentation on how to use the robots.txt file
+# The comments in here used to be funnier but since it shows up on UserVoice sites we thought we'd clean it up a bit. The original lives on at http://www.uservoice.com/robots.txt
+
+# MSN bot is prone to over-crawling
+User-agent: msnbot
+Crawl-delay: 120
+
+# 80legs is often abused
+User-agent: 008
+Disallow: /
+
+# Disabled due to abuse
+User-agent: TurnitinBot
+Disallow: /
+
+# Disabled due to abuse
+User-agent: WBSearchBot
+Disallow: /
