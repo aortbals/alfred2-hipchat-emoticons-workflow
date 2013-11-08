@@ -99,7 +99,8 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Version: 0.0.2
+Supports: &gt;= Ruby 1.8</string>
 	<key>uidata</key>
 	<dict>
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
